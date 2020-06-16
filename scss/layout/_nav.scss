@@ -1,0 +1,37 @@
+/* ! nav
+===================*/
+
+.nav {
+  ul {
+    text-decoration: none;
+    display: flex;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    flex-direction: row;
+    li {
+      text-decoration: none;
+      list-style-type: none; /* Убираем маркеры */
+    }
+  }
+}
+
+.nav__link {
+  margin-left: 50px;
+
+  /* color: #fff; */
+  color: red;
+
+  text-decoration: none;
+  opacity: 0.75;
+
+  transition: opacity 0.1s linear;
+}
+
+// .nav__link:first-child {
+//   margin-left: 0;
+// }
+
+.nav__link:hover {
+  opacity: 1;
+}
