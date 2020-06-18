@@ -4,36 +4,28 @@
   justify-content: center;
   height: 750px;
   padding-top: 500px;
-  /* background: $bgColor url("../img/covid_1.jpg") center no-repeat;*/
   background: $bgColor url("../img/covid_1.jpg") center no-repeat;
-  //   background: #46c3d1 url("../img/covid_1.jpg") center no-repeat;
   background-size: cover;
-}
-
-.intro__inner {
-  width: 100%;
-  max-width: 970px;
-  margin: 0 auto;
-
-  text-align: center;
-}
-
-.intro__title {
-  margin: 0 0 30px;
-
-  font-family: "Open Sans", sans-serif;
-  font-size: 65px;
-  line-height: 1.1;
-  color: #fff;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.intro__subtitle {
-  margin-bottom: 60px;
-
-  font-size: 22px;
-  color: #fff;
-  line-height: 1.5;
-  font-weight: 400;
+  &__inner {
+    width: 100%;
+    max-width: 970px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  &__title {
+    margin: 0 0 30px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 65px;
+    line-height: 1.1;
+    color: $white;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  &__subtitle {
+    margin-bottom: 60px;
+    font-size: 22px;
+    color: $white;
+    line-height: 1.5;
+    font-weight: 400;
+  }
 }
