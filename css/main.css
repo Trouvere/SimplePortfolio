@@ -374,6 +374,9 @@ dd {
   margin: 0;
 }
 
+/* colors
+===================*/
+/*$bgColor: #46c3d1;*/
 body {
   margin: 0;
   font-family: "Raleway", sans-serif;
@@ -452,4 +455,49 @@ body {
 
 .nav__link:hover {
   opacity: 1;
+}
+
+/* Intro
+===================*/
+.intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 750px;
+  padding-top: 500px;
+  /* background: $bgColor url("../img/covid_1.jpg") center no-repeat;*/
+  background: #46c3d1 url("../img/covid_1.jpg") center no-repeat;
+  background-size: cover;
+}
+
+.intro__inner {
+  width: 100%;
+  max-width: 970px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.intro__title {
+  margin: 0 0 30px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 65px;
+  line-height: 1.1;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.intro__subtitle {
+  margin-bottom: 60px;
+  font-size: 22px;
+  color: #fff;
+  line-height: 1.5;
+  font-weight: 400;
 }
