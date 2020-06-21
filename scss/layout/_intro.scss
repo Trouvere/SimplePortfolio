@@ -1,11 +1,34 @@
 .intro {
+  //css-parallax<
+  position: relative;
+  min-height: 100vh;
+  min-width: 100vh;
+  overflow: hidden;
+  //css-parallax>
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 750px;
   padding-top: 500px;
-  background: $bgColor url("../img/covid_1.jpg") center no-repeat;
+
   background-size: cover;
+  //css-parallax<
+  &:before {
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    min-height: auto;
+    background: $bgColor url("../img/Madeira-bg.jpg") center no-repeat;
+    background-size: cover;
+    transition: is linear;
+    transform: translateZ(-1px) scale(2);
+    z-index: -1;
+  }
+  //css-parallax>
   &__inner {
     width: 100%;
     max-width: 970px;
