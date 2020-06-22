@@ -1,11 +1,13 @@
-// html {
-//css-parallax
-// height: 100%;
-// overflow: hidden;
-//css-parallax
-// }
+html {
+  //css-parallax
+  height: 100%;
+  // overflow: hidden;
+  //css-parallax
+}
 body {
   margin: 0;
+    display: flex;
+  flex-direction: column;
   //css-parallax
   // padding: 0;
   // height: 100%;

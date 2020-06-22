@@ -379,6 +379,10 @@ dd {
 /*$bgColor: #46c3d1;*/
 /* body
 ===================*/
+html {
+  height: 100%;
+}
+
 body {
   margin: 0;
   font-family: "Raleway", sans-serif;
@@ -462,45 +466,15 @@ body {
 /* Intro
 ===================*/
 .intro {
-  position: relative;
-  min-height: 100vh;
-  min-width: 100vh;
+  height: 100%;
   overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 750px;
-  padding-top: 500px;
   background-size: cover;
-}
-
-.intro:before {
-  content: "";
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  position: absolute;
-  min-height: auto;
-  background: #46c3d1 url("../img/Madeira-bg.jpg") center no-repeat;
-  background-size: cover;
-  -webkit-transition: is linear;
-  transition: is linear;
-  -webkit-transform: translateZ(-1px) scale(2);
-          transform: translateZ(-1px) scale(2);
-  z-index: -1;
 }
 
 .intro__inner {
   width: 100%;
   max-width: 970px;
+  padding-top: 100px;
   margin: 0 auto;
   text-align: center;
 }
@@ -521,6 +495,56 @@ body {
   color: #ffffff;
   line-height: 1.5;
   font-weight: 400;
+}
+
+.parallax {
+  margin: 0;
+  padding: 0;
+  -webkit-perspective: 1px;
+          perspective: 1px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: "Amatic SC", cursive;
+  color: #fff;
+}
+
+.parallax::-webkit-scrollbar {
+  width: 0;
+}
+
+.parallax__layer {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  min-height: 100vh;
+  text-align: center;
+  padding-top: 20%;
+  -webkit-transform-style: inherit;
+          transform-style: inherit;
+  width: 100vw;
+}
+
+.parallax__layer:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: -1;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  min-height: 100vh;
+  background-image: url("../img/Madeira-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-transition: 1s;
+  transition: 1s;
+  /* Параллакс */
+  -webkit-transform: translateZ(-1px) scale(2);
+          transform: translateZ(-1px) scale(2);
 }
 
 /* works
@@ -591,4 +615,62 @@ body {
 .works__text {
   font-size: 14px;
   color: #ffffff;
+}
+
+/* buttons
+===================*/
+.btn,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  display: inline-block;
+  font-family: "montserrat-semibold", sans-serif;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  height: 5.4rem;
+  line-height: calc(5.4rem - 0.6rem);
+  padding: 0 3rem;
+  margin: 0 0.3rem 1.2rem 0;
+  color: #151515;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #c5c5c5;
+  border: 0.3rem solid #c5c5c5;
+}
+
+.btn:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+.btn:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus {
+  background-color: #b8b8b8;
+  border-color: #b8b8b8;
+  color: #000000;
+  outline: 0;
+}
+
+/* button modifiers
+ * ------------------------------------------------- */
+.btn--stroke,
+button.btn--stroke {
+  background: transparent !important;
+  border: 0.3rem solid #000000;
+  color: #000000;
+}
+
+.btn--stroke:hover,
+button.btn--stroke:hover {
+  border: 0.3rem solid #862121;
+  color: #862121;
 }
