@@ -1,4 +1,19 @@
 .intro {
+  background-color: teal;
+  background-image: url("../img/n/laptop (11).jpg"),
+    linear-gradient(white, gray);
+  // background-blend-mode: overlay;
+  opacity: 0.8;
+  min-width: 100vh;
+  background-size: cover;
+  min-height: 100vh;
+  padding-top: 100px;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  z-index: -1;
+  // linear-gradient(white, gray);
+  // background-color: red;
+
   //css-parallax<
   // position: relative;
   // min-height: 100vh;
@@ -7,8 +22,8 @@
   //css-parallax>
 
   //css-parallax2>
-  height: 100%;
-  overflow: hidden;
+  // height: 100%;
+  // overflow: hidden;
   //css-parallax2
 
   // display: flex;
@@ -16,7 +31,7 @@
   // justify-content: center;
   // height: 1750px;
   // padding-top: 100px;
-  background-size: cover;
+  // background-size: cover;
   //css-parallax<
   // &:before {
   //   content: "";
@@ -34,8 +49,12 @@
   // }
   //css-parallax>
   &__inner {
+    z-index: 2;
+    min-width: 100vh;
+    // background-color: rgba($color: white, $alpha: 0.7);
+
     width: 100%;
-    max-width: 970px;
+    // max-width: 970px;
     // padding-top: 100px;
     margin: 0 auto;
     text-align: center;
@@ -45,9 +64,12 @@
     font-family: "Open Sans", sans-serif;
     font-size: 65px;
     line-height: 1.1;
+
     color: $white;
     font-weight: 700;
     text-transform: uppercase;
+    opacity: 1;
+    z-index: 10;
   }
   &__subtitle {
     margin-bottom: 60px;
@@ -57,74 +79,48 @@
     font-weight: 400;
   }
 }
-.parallax {
-  margin: 0;
-  padding: 0;
-  perspective: 1px;
-  transform-style: preserve-3d;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  font-family: "Amatic SC", cursive;
-  color: #fff;
-  &::-webkit-scrollbar {
-    width: 0;
-  }
-}
-.parallax__layer {
-  //css-parallax<
-  box-sizing: border-box;
-  min-height: 100vh;
-  text-align: center;
-  padding-top: 20%;
-  transform-style: inherit;
-  width: 100vw;
-  //css-parallax>
-
-  //css-parallax<
-  &:before {
-    content: "";
-    display: block;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: -100;
-    z-index: -1;
-    transform-origin: center;
-    min-height: 100vh;
-    background-image: url("../img/Madeira-bg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    transition: 1s;
-    /* Параллакс */
-    transform: translateZ(-1px) scale(2);
-  }
-}
-//css-parallax>
 
 // .parallax {
-//   perspective: 1px;
-//   height: 100vh;
+//   margin: 0;
+//   padding: 0;
+// perspective: 1px;
+// transform-style: preserve-3d;
+//   overflow-y: scroll;
 //   overflow-x: hidden;
-//   overflow-y: auto;
+//   font-family: "Amatic SC", cursive;
+//   color: #fff;
+//   &::-webkit-scrollbar {
+//     width: 0;
+//   }
 // }
 // .parallax__layer {
-//   position: absolute;
-//   top: 0;
-//   right: 0;
-//   bottom: 0;
-//   left: 0;
+//   //css-parallax<
+//   box-sizing: border-box;
+//   min-height: 100vh;
+//   text-align: center;
+//   padding-top: 20%;
+//   transform-style: inherit;
+//   width: 100vw;
+//   //css-parallax>
+
+//   //css-parallax<
+//   &:before {
+//     content: "";
+//     display: block;
+//     position: absolute;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//     top: -100;
+//     z-index: -1;
+//     transform-origin: center;
+//     min-height: 100vh;
+//     background-image: url("../img/Madeira-bg.jpg");
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     transition: 1s;
+//     /* Параллакс */
+//     transform: translateZ(-1px) scale(2);
+//   }
 // }
-// .parallax__layer--base {
-//   transform: translateZ(0);
-// }
-// .parallax__layer--back {
-//   // margin: 200;
-//   transform: translateZ(-1px) scale(2);
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   height: 750px;
-//   padding-top: 500px;
-//   // background: $bgColor url("../img/Madeira-bg.jpg") center no-repeat;
-// }
+// //css-parallax>
