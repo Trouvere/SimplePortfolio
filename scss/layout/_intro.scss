@@ -1,16 +1,35 @@
+.cover {
+  // background: rgba(0, 0, 0, 0.6);
+  background-color: transparentize($black, 0.6);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+// .content {
+//   position: relative;
+//   z-index: 2;
+// }
+
 .intro {
-  background-color: teal;
-  background-image: url("../img/n/laptop (11).jpg"),
-    linear-gradient(white, gray);
-  // background-blend-mode: overlay;
+  position: relative;
+
+  background-image: url("../img/n/laptop (11).jpg");
+
   opacity: 0.8;
   min-width: 100vh;
   background-size: cover;
   min-height: 100vh;
   padding-top: 100px;
-  perspective: 1px;
-  transform-style: preserve-3d;
-  z-index: -1;
+
+  z-index: 1;
+
+  // center
+  display: flex;
+  justify-content: center;
+  align-items: center;
   // linear-gradient(white, gray);
   // background-color: red;
 
@@ -49,8 +68,10 @@
   // }
   //css-parallax>
   &__inner {
+    position: relative;
     z-index: 2;
     min-width: 100vh;
+
     // background-color: rgba($color: white, $alpha: 0.7);
 
     width: 100%;
@@ -65,7 +86,7 @@
     font-size: 65px;
     line-height: 1.1;
 
-    color: $white;
+    // color: #00ffff;
     font-weight: 700;
     text-transform: uppercase;
     opacity: 1;
@@ -73,8 +94,8 @@
   }
   &__subtitle {
     margin-bottom: 60px;
-    font-size: 22px;
-    color: $white;
+    font-size: 40px;
+    // color: $black;
     line-height: 1.5;
     font-weight: 400;
   }
