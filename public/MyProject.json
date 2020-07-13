@@ -1,0 +1,20 @@
+[
+  {
+    "id": 0,
+    "title": "ActiveBox",
+    "type": "landingPage",
+    "coverImage": "",
+    "techStack": ["jQuery", "html5", "CSS3", "flexbox"],
+    "code": "https://github.com/Trouvere/ActiveBox",
+    "pages": "https://trouvere.github.io/ActiveBox/"
+  },
+  {
+    "id": 1,
+    "title": "ComplexBusinessClosure",
+    "type": "landingPage",
+    "coverImage": "",
+    "techStack": ["jQuery", "html5", "CSS3", "flexbox"],
+    "code": "https://github.com/Trouvere/ComplexBusinessClosure",
+    "pages": "https://trouvere.github.io/ComplexBusinessClosure/"
+  }
+]
