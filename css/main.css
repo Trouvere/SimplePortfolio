@@ -6,6 +6,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css?family=Raleway");
 @import url(https://fonts.googleapis.com/css?family=Cabin);
 html {
   line-height: 1.15;
@@ -435,6 +436,10 @@ body {
   border-bottom: 1px solid #515369;
 }
 
+.header__logo {
+  padding: 10px;
+}
+
 /* ! nav
 ===================*/
 .nav ul {
@@ -464,6 +469,14 @@ body {
   opacity: 0.75;
   -webkit-transition: opacity 0.1s linear;
   transition: opacity 0.1s linear;
+}
+
+.nav__link:first-child {
+  margin-left: 0;
+}
+
+.nav__link:last-child {
+  margin-right: 50px;
 }
 
 .nav__link:hover {
@@ -527,6 +540,159 @@ body {
   font-size: 40px;
   line-height: 1.5;
   font-weight: 400;
+}
+
+.footer__content {
+  background-color: #595959;
+  padding: 20px 0px 30px;
+}
+
+.footer__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__inner .header__btn {
+  float: none;
+  display: inline-block;
+}
+
+.footer__map {
+  padding-top: 10px;
+  max-width: 630px;
+  width: 100%;
+}
+
+.footer__map iframe {
+  width: 100%;
+}
+
+.footer__title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+  line-height: 36px;
+  letter-spacing: 0.5px;
+}
+
+.footer__text {
+  color: #d3d2d2;
+  margin-bottom: 20px;
+}
+
+.footer__info {
+  max-width: 360px;
+}
+
+.footer__list {
+  padding-top: 10px;
+}
+
+.footer__list li {
+  margin-top: 10px;
+}
+
+.footer__list a {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.25px;
+  color: #fff;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  padding-left: 35px;
+  position: relative;
+}
+
+.footer__list .footer__mail:before {
+  content: "\f003";
+  position: absolute;
+  left: 0;
+  color: #ffc222;
+  font-family: FontAwesome;
+}
+
+.footer__list .footer__phone:before {
+  content: "\f095";
+  position: absolute;
+  left: 0;
+  color: #ffc222;
+  font-family: FontAwesome;
+  font-family: FontAwesome;
+}
+
+.footer__copy {
+  background-color: #303030;
+  text-align: center;
+  font-size: 12px;
+  line-height: 24px;
+  padding: 8px 0;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+
+/* icon
+===================*/
+.socialIcons {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: inline-block;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 70px;
+  text-align: center;
+}
+
+.socialIcons li {
+  display: inline-block;
+  margin: auto 10px;
+}
+
+.socialIcons li a {
+  text-align: center;
+  display: inline-block;
+  font-size: 4rem;
+  height: 100px;
+  width: 100px;
+  line-height: 100px;
+  color: #f1dabf;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+  text-shadow: 0px 0px 1px black, 0px 0px 1px black;
+  -webkit-transform: rotateX(-30deg);
+          transform: rotateX(-30deg);
+}
+
+.socialIcons li a:hover {
+  -webkit-transform: rotateX(-30deg) translateY(-20px);
+          transform: rotateX(-30deg) translateY(-20px);
+}
+
+.socialIcons li a:hover.facebook {
+  color: #365899;
+  text-shadow: 0px 0px 0px #365899,0px 1px 2px #2f4d86,0px 2px 2px #294273,0px 3px 2px #223760,0px 4px 2px #1b2d4e,0px 5px 2px #15223b,0px 6px 2px #0e1728,0px 7px 2px #070c15,0px 8px 2px #010102,0px 9px 2px black,0px 10px 2px black;
+}
+
+.socialIcons li a:hover.skype {
+  color: #00aff0;
+  text-shadow: 0px 0px 0px #00aff0,0px 1px 2px #009cd7,0px 2px 2px #008abd,0px 3px 2px #0077a4,0px 4px 2px #00658a,0px 5px 2px #005271,0px 6px 2px #003f57,0px 7px 2px #002d3e,0px 8px 2px #001a24,0px 9px 2px #00080b,0px 10px 2px black;
+}
+
+.socialIcons li a:hover.github {
+  color: #191919;
+  text-shadow: 0px 0px 0px #191919,0px 1px 2px #0c0c0c,0px 2px 2px black,0px 3px 2px black,0px 4px 2px black,0px 5px 2px black,0px 6px 2px black,0px 7px 2px black,0px 8px 2px black,0px 9px 2px black,0px 10px 2px black;
+}
+
+.socialIcons li a:hover.linkedin {
+  color: #0e76a8;
+  text-shadow: 0px 0px 0px #0e76a8,0px 1px 2px #0c6590,0px 2px 2px #0a5579,0px 3px 2px #084461,0px 4px 2px #06344a,0px 5px 2px #042332,0px 6px 2px #02131b,0px 7px 2px #000203,0px 8px 2px black,0px 9px 2px black,0px 10px 2px black;
 }
 
 /* works

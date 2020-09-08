@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+// @import "font-awesome.min.css";
+$dark: #f1dabf;
+$facebook: #365899;
+$skype: #00aff0;
+$github: #191919;
+$linkedin: #0e76a8;
+
+@function Shadow($color, $number) {
+  $value: "0px 0px 0px #{$color}";
+  @for $i from 1 through $number {
+    $value: "#{$value},0px #{$i}px 2px "+darken($color, $i * 5);
+  }
+  @return unquote($value);
+}
+
+.socialIcons {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: inline-block;
+  // position: fixed;
+  // top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 70px;
+  text-align: center;
+  li {
+    display: inline-block;
+    margin: auto 10px;
+
+    a {
+      text-align: center;
+      display: inline-block;
+      font-size: 4rem;
+      height: 100px;
+      width: 100px;
+      line-height: 100px;
+      color: $dark;
+      transition: all ease 0.5s;
+      text-shadow: 0px 0px 1px rgba(0, 0, 0, 1), 0px 0px 1px rgba(0, 0, 0, 1);
+      transform: rotateX(-30deg);
+      &:hover {
+        transform: rotateX(-30deg) translateY(-20px);
+        &.facebook {
+          color: $facebook;
+          text-shadow: Shadow($facebook, 10);
+        }
+
+        &.skype {
+          color: $skype;
+          text-shadow: Shadow($skype, 10);
+        }
+        &.github {
+          color: $github;
+          text-shadow: Shadow($github, 10);
+        }
+        &.linkedin {
+          color: $linkedin;
+          text-shadow: Shadow($linkedin, 10);
+        }
+      }
+    }
+  }
+}

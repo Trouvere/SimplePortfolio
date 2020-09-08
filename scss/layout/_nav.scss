@@ -26,11 +26,13 @@
   opacity: 0.75;
 
   transition: opacity 0.1s linear;
+  &:first-child {
+    margin-left: 0;
+  }
+  &:last-child {
+    margin-right: 50px;
+  }
 }
-
-// .nav__link:first-child {
-//   margin-left: 0;
-// }
 
 .nav__link:hover {
   opacity: 1;

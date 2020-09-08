@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>TrouverePortfolio</title>
     <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <!--! Header -->
@@ -63,12 +67,8 @@
             <h1 class="intro__title">Aliaksei Mishyn</h1>
             <h2 class="intro__subtitle">WEB Developer</h2>
             <div class="intro__buttons">
-              <a href="#works" class="btn btn--red">
-                Latest Projects
-              </a>
-              <a href="#about" class="btn btn--red">
-                More About Me
-              </a>
+              <a href="#works" class="btn btn--red"> Latest Projects </a>
+              <a href="#about" class="btn btn--red"> More About Me </a>
             </div>
 
             <div class="scroll-down">
@@ -95,6 +95,54 @@
     </div>
 
     <!--! Intro -->
+
+    <!--! about -->
+    <div class="section section-about" id="about-me">
+      <section class="about-me">
+        <div class="my-foto">
+          <div class="border-img">
+            <div class="block-abs">
+              <img src="img/my-foto.png" class="b-lazy" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="about-me_info">
+          <h3 class="title">ОБО МНЕ</h3>
+          <p>
+            Здравствуйте! Меня зовут Алексей. Я frontend developer. Здесь будем
+            немного текскта обо мне:))
+          </p>
+          <ul>
+            <li>
+              <span class="about-title">Дата рождения:</span
+              ><span class="about-info"> 07 Августа 1989</span>
+            </li>
+            <li>
+              <span class="about-title">Адрес:</span
+              ><span class="about-info"> Минск</span>
+            </li>
+            <li>
+              <span class="about-title">Телефон:</span
+              ><span class="about-info"
+                ><a href="tel:+375447886785"> +375 (44)788-67-85</a></span
+              >
+            </li>
+            <li>
+              <span class="about-title">Email:</span
+              ><span class="about-info"
+                ><a href="mailto:trouvere777@mail.ru">
+                  trouvere777@mail.ru</a
+                ></span
+              >
+            </li>
+          </ul>
+          <a href="" class="btn about-btn" target="blank"
+            ><i class="fas fa-cloud-upload-alt"></i>Скачать резюме</a
+          >
+        </div>
+      </section>
+    </div>
+    <!--! about -->
 
     <!--! Works -->
     <div class="works" id="works">
@@ -128,53 +176,57 @@
       </div>
     </div>
     <!--! Works -->
-    <!--! about -->
-    <div class="section section-about" id="about-me">
-      <section class="about-me">
-        <div class="my-foto">
-          <div class="border-img">
-            <div class="block-abs">
-              <img src="img/my-foto.png" class="b-lazy" alt="" />
+
+    <footer class="footer">
+      <div class="footer__content">
+        <div class="container">
+          <div class="footer__inner">
+            <div class="footer__info">
+              <ul class="footer__list">
+                <li>
+                  <a class="footer__phone" href="tel:+375447886785"
+                    >+375 (44)788-67-85</a
+                  >
+                </li>
+                <li>
+                  <a class="footer__mail" href="mailto:trouvere777@mail.ru"
+                    >trouvere777@mail.ru</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="social">
+              <ul class="socialIcons">
+                <li>
+                  <a href="#" class="facebook"
+                    ><i class="fa fa-facebook"></i
+                  ></a>
+                </li>
+                <!-- <li><a href="#" class="envelope"><i class="fa fa-envelope"></i></a></li> -->
+                <!-- <li><a href="#" class="phone"><i class="fa fa-phone"></i></a></li> -->
+                <li>
+                  <a href="#" class="github"><i class="fa fa-github"></i></a>
+                </li>
+                <li>
+                  <a href="#" class="skype"><i class="fa fa-skype"></i></a>
+                </li>
+
+                <li>
+                  <a href="#" class="linkedin"
+                    ><i class="fa fa-linkedin"></i
+                  ></a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-        <div class="about-me_info">
-          <h3 class="title">ОБО МНЕ</h3>
-          <p>
-            Здравствуйте! Меня зовут Алексей. Я frontend developer. Здесь будем
-            немного текскта обо мне:))
-          </p>
-          <ul>
-            <li>
-              <span class="about-title">Дата рождения:</span
-              ><span class="about-info"> 07 Августа 1989</span>
-            </li>
-            <li>
-              <span class="about-title">Адрес:</span
-              ><span class="about-info"> Минск</span>
-            </li>
-            <li>
-              <span class="about-title">Телефон:</span
-              ><span class="about-info"
-                ><a href="tel:+3754478867**"> +375 (44)788-67-**</a></span
-              >
-            </li>
-            <li>
-              <span class="about-title">Email:</span
-              ><span class="about-info"
-                ><a href="mailto:trouvere777@mail.ru">
-                  trouvere7**@mail.ru</a
-                ></span
-              >
-            </li>
-          </ul>
-          <a href="" class="btn about-btn" target="blank"
-            ><i class="fas fa-cloud-upload-alt"></i>Скачать резюме</a
-          >
+      </div>
+      <div class="footer__copy">
+        <div class="container">
+          <div class="copy__text">Мишин Алексей © 2020</div>
         </div>
-      </section>
-    </div>
-    <!--! about -->
+      </div>
+    </footer>
 
     <script src="js/main.js"></script>
   </body>
