@@ -9,7 +9,7 @@
   padding: 0;
   font-family: sans-serif;
 }
-.circularProgressBar {
+.circular-progress-bar {
   @extend %center;
   min-height: 100vh;
   background: linear-gradient(45deg, #333333, #5a5454);
@@ -20,7 +20,7 @@
   display: flex;
   justify-content: space-around;
 
-  .circularProgressBar__card {
+  .circular-progress-bar__card {
     @extend %center;
     position: relative;
     width: 250px;
@@ -36,7 +36,7 @@
       transform: translatey(-15px);
       box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
 
-      .circularProgressBar__number {
+      .circular-progress-bar__number {
         h2 {
           color: #fff;
           font-size: 50px;
@@ -60,7 +60,7 @@
       pointer-events: none;
     }
   }
-  .circularProgressBar__percent {
+  .circular-progress-bar__percent {
     position: relative;
     width: 150px;
     height: 150px;
@@ -76,7 +76,7 @@
       transition: 0.5s ease;
     }
 
-    .circularProgressBar__number {
+    .circular-progress-bar__number {
       @extend %center;
       position: absolute;
       top: 0;
@@ -123,7 +123,7 @@
     }
   }
 
-  .circularProgressBar__card {
+  .circular-progress-bar__card {
     &:nth-child(1) {
       svg {
         circle {
