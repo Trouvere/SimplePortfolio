@@ -97,89 +97,103 @@
     <!--! Intro -->
 
     <!--! about -->
-    <div class="section section-about" id="about-me">
-      <section class="about-me">
-        <div class="my-foto">
-          <div class="border-img">
-            <div class="block-abs">
-              <img src="img/my-foto.png" class="b-lazy" alt="" />
-            </div>
-          </div>
-        </div>
-        <div class="about-me_info">
-          <h3 class="title">ОБО МНЕ</h3>
-          <p>
-            Здравствуйте! Меня зовут Алексей. Я frontend developer. Здесь будем
-            немного текскта обо мне:))
-          </p>
-          <ul>
-            <li>
-              <span class="about-title">Дата рождения:</span
-              ><span class="about-info"> 07 Августа 1989</span>
-            </li>
-            <li>
-              <span class="about-title">Адрес:</span
-              ><span class="about-info"> Минск</span>
-            </li>
-            <li>
-              <span class="about-title">Телефон:</span
-              ><span class="about-info"
-                ><a href="tel:+375447886785"> +375 (44)788-67-85</a></span
-              >
-            </li>
-            <li>
-              <span class="about-title">Email:</span
-              ><span class="about-info"
-                ><a href="mailto:trouvere@bk.ru"> trouvere@bk.ru</a></span
-              >
-            </li>
-          </ul>
-          <a href="" class="btn about-btn" target="blank"
-            ><i class="fas fa-cloud-upload-alt"></i>Скачать резюме</a
-          >
-        </div>
-      </section>
-    </div>
-    <!--! about -->
-    <!--! circularProgressBar -->
-    <div class="circularProgressBar">
+    <section class="about">
       <div class="container">
-        <div class="circularProgressBar__card">
-          <div class="circularProgressBar__box">
-            <div class="circularProgressBar__percent">
+        <div class="about__content">
+          <div class="about__inner">
+            <div class="about__my-foto">
+              <div class="about__border-img">
+                <div class="about__block-abs">
+                  <img
+                    class="about__img"
+                    src="https://sun1.velcom-by-minsk.userapi.com/c831309/v831309545/156327/GEZaKPcD2C4.jpg"
+                    class="b-lazy"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="about__content">
+              <h3 class="about__title">Обо мне</h3>
+              <div class="about__text">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste
+                  a dolores consectetur provident ratione quo reiciendis,
+                  eligendi aliquid error ab ducimus fugit, quia perferendis id
+                  laboriosam animi eos excepturi sint.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste
+                  a dolores consectetur provident ratione quo reiciendis,
+                  eligendi aliquid error ab ducimus fugit, quia perferendis id
+                  laboriosam animi eos excepturi sint.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste
+                  a dolores consectetur provident ratione quo reiciendis,
+                  eligendi aliquid error ab ducimus fugit, quia perferendis id
+                  laboriosam animi eos excepturi sint.
+                </p>
+              </div>
+              <!-- /.about__content -->
+            </div>
+          </div>
+          <!-- /.about__inner -->
+
+          <!-- <a href="" class="about__btn" target="blank"
+            ><i class="fas fa-cloud-upload-alt" aria-hidden="true"></i>Скачать
+            резюме</a
+          > -->
+          <div class="center">
+            <a href="" class="btn about__btn" target="blank"
+              ><i class="fas fa-cloud-upload-alt"></i>Скачать резюме</a
+            >
+          </div>
+        </div>
+      </div>
+      <!-- /.container -->
+    </section>
+    <!--! about -->
+    <!--! circular-progress-bar -->
+    <div class="circular-progress-bar">
+      <div class="container">
+        <div class="circular-progress-bar__card">
+          <div class="circular-progress-bar__box">
+            <div class="circular-progress-bar__percent">
               <svg>
                 <circle cx="70" cy="70" r="70"></circle>
                 <circle cx="70" cy="70" r="70"></circle>
               </svg>
-              <div class="circularProgressBar__number">
+              <div class="circular-progress-bar__number">
                 <h2>80<span>%</span></h2>
               </div>
               <h3>HTML</h3>
             </div>
           </div>
         </div>
-        <div class="circularProgressBar__card">
-          <div class="circularProgressBar__box">
-            <div class="circularProgressBar__percent">
+        <div class="circular-progress-bar__card">
+          <div class="circular-progress-bar__box">
+            <div class="circular-progress-bar__percent">
               <svg>
                 <circle cx="70" cy="70" r="70"></circle>
                 <circle cx="70" cy="70" r="70"></circle>
               </svg>
-              <div class="circularProgressBar__number">
+              <div class="circular-progress-bar__number">
                 <h2>80<span>%</span></h2>
               </div>
               <h3>HTML</h3>
             </div>
           </div>
         </div>
-        <div class="circularProgressBar__card">
-          <div class="circularProgressBar__box">
-            <div class="circularProgressBar__percent">
+        <div class="circular-progress-bar__card">
+          <div class="circular-progress-bar__box">
+            <div class="circular-progress-bar__percent">
               <svg>
                 <circle cx="70" cy="70" r="70"></circle>
                 <circle cx="70" cy="70" r="70"></circle>
               </svg>
-              <div class="circularProgressBar__number">
+              <div class="circular-progress-bar__number">
                 <h2>80<span>%</span></h2>
               </div>
               <h3>HTML</h3>
@@ -188,7 +202,8 @@
         </div>
       </div>
     </div>
-    <!--! circularProgressBar -->
+    <!--! circular-progress-bar -->
+
     <!--! Works -->
     <div class="works" id="works">
       <div class="works__item">
@@ -219,12 +234,67 @@
           <div class="works__text">User Interface Design</div>
         </div>
       </div>
+      <div class="works__item">
+        <img class="works__photo" src="https://placehold.it/370x300" alt="" />
+        <div class="works__content">
+          <div class="works__title">Project Name</div>
+          <div class="works__text">User Interface Design</div>
+        </div>
+      </div>
+      <div class="works__item">
+        <img class="works__photo" src="https://placehold.it/370x300" alt="" />
+        <div class="works__content">
+          <div class="works__title">Project Name</div>
+          <div class="works__text">User Interface Design</div>
+        </div>
+      </div>
+      <div class="works__item">
+        <img class="works__photo" src="https://placehold.it/370x300" alt="" />
+        <div class="works__content">
+          <div class="works__title">Project Name</div>
+          <div class="works__text">User Interface Design</div>
+        </div>
+      </div>
+      <div class="works__item">
+        <img class="works__photo" src="https://placehold.it/370x300" alt="" />
+        <div class="works__content">
+          <div class="works__title">Project Name</div>
+          <div class="works__text">User Interface Design</div>
+        </div>
+      </div>
     </div>
     <!--! Works -->
+    <!--! feed-back-form -->
+    <section class="feed-back-form" id="contact">
+      <h1 class="feed-back-form__title">Связаться со мной</h1>
+      <form
+        class="feed-back-form__form"
+        action="https://getform.io/f/e8b76534-64ab-4805-b9a2-389339262d27"
+        method="POST"
+      >
+        <label class="name" class="name"
+          >Name:
+          <input type="text" id="name" name="name" />
+        </label>
+
+        <label class="email" class="email"
+          >Email:
+          <input type="email" id="email" name="email" />
+        </label>
+
+        <label message="message" class="message"
+          >Message:
+          <textarea type="text id="message"s name="message"></textarea>
+        </label>
+
+        <input class="button form-button" type="submit" value="SEND" />
+      </form>
+    </section>
+    <!--! feed-back-form -->
 
     <footer class="footer">
-      <div class="footer__content">
-        <div class="container">
+      <!-- <div class="container"> -->
+        <div class="footer__content ">
           <div class="footer__inner">
             <div class="footer__info">
               <ul class="footer__list">
@@ -266,11 +336,12 @@
           </div>
         </div>
       </div>
+      <!-- footer__inner -->
       <div class="footer__copy">
-        <div class="container">
+        <!-- <div class="container"> -->
           <div class="copy__text">Мишин Алексей © 2020</div>
-        </div>
-      </div>
+        <!-- </div> -->
+      <!-- </div> -->
     </footer>
 
     <script src="js/main.js"></script>

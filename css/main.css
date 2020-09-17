@@ -402,6 +402,10 @@ body {
   background-color: #223843;
 }
 
+.center {
+  text-align: center;
+}
+
 /* ! header
 ===================*/
 .header {
@@ -542,12 +546,19 @@ body {
   font-weight: 400;
 }
 
+.footer {
+  background-color: #303030;
+}
+
 .footer__content {
-  background-color: #595959;
   padding: 20px 0px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .footer__inner {
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -587,17 +598,21 @@ body {
 
 .footer__info {
   max-width: 360px;
+  margin: auto;
 }
 
 .footer__list {
-  padding-top: 10px;
+  margin: auto;
 }
 
 .footer__list li {
+  text-decoration: none;
+  list-style-type: none;
   margin-top: 10px;
 }
 
 .footer__list a {
+  text-decoration: none;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.25px;
@@ -606,6 +621,7 @@ body {
   font-family: "Roboto", sans-serif;
   padding-left: 35px;
   position: relative;
+  text-decoration: none;
 }
 
 .footer__list .footer__mail:before {
@@ -626,7 +642,6 @@ body {
 }
 
 .footer__copy {
-  background-color: #303030;
   text-align: center;
   font-size: 12px;
   line-height: 24px;
@@ -638,15 +653,6 @@ body {
 /* icon
 ===================*/
 .socialIcons {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-  display: inline-block;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  height: 70px;
   text-align: center;
 }
 
@@ -1312,7 +1318,7 @@ body {
 
 /* _circularProgressBar
 ===================*/
-.circularProgressBar, .container .circularProgressBar__card, .container .circularProgressBar__percent .circularProgressBar__number {
+.circular-progress-bar, .container .circular-progress-bar__card, .container .circular-progress-bar__percent .circular-progress-bar__number {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1330,7 +1336,7 @@ body {
   font-family: sans-serif;
 }
 
-.circularProgressBar {
+.circular-progress-bar {
   min-height: 100vh;
   background: linear-gradient(45deg, #333333, #5a5454);
 }
@@ -1345,7 +1351,7 @@ body {
       justify-content: space-around;
 }
 
-.container .circularProgressBar__card {
+.container .circular-progress-bar__card {
   position: relative;
   width: 250px;
   height: 330px;
@@ -1358,27 +1364,27 @@ body {
   transition: 0.5s ease;
 }
 
-.container .circularProgressBar__card:hover {
+.container .circular-progress-bar__card:hover {
   -webkit-transform: translatey(-15px);
           transform: translatey(-15px);
   -webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
           box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
 }
 
-.container .circularProgressBar__card:hover .circularProgressBar__number h2 {
+.container .circular-progress-bar__card:hover .circular-progress-bar__number h2 {
   color: #fff;
   font-size: 50px;
 }
 
-.container .circularProgressBar__card:hover .circularProgressBar__number h2 span {
+.container .circular-progress-bar__card:hover .circular-progress-bar__number h2 span {
   color: #fff;
 }
 
-.container .circularProgressBar__card:hover h3 {
+.container .circular-progress-bar__card:hover h3 {
   color: #fff;
 }
 
-.container .circularProgressBar__card:before {
+.container .circular-progress-bar__card:before {
   content: "";
   position: absolute;
   top: 0;
@@ -1389,7 +1395,7 @@ body {
   pointer-events: none;
 }
 
-.container .circularProgressBar__percent {
+.container .circular-progress-bar__percent {
   position: relative;
   width: 150px;
   height: 150px;
@@ -1400,7 +1406,7 @@ body {
   z-index: 1;
 }
 
-.container .circularProgressBar__percent h3 {
+.container .circular-progress-bar__percent h3 {
   margin-top: 16px;
   color: #777;
   font-size: 22px;
@@ -1408,7 +1414,7 @@ body {
   transition: 0.5s ease;
 }
 
-.container .circularProgressBar__percent .circularProgressBar__number {
+.container .circular-progress-bar__percent .circular-progress-bar__number {
   position: absolute;
   top: 0;
   left: 0;
@@ -1417,14 +1423,14 @@ body {
   border-radius: 50%;
 }
 
-.container .circularProgressBar__percent .circularProgressBar__number h2 {
+.container .circular-progress-bar__percent .circular-progress-bar__number h2 {
   color: #777;
   font-size: 44px;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
 }
 
-.container .circularProgressBar__percent .circularProgressBar__number h2 span {
+.container .circular-progress-bar__percent .circular-progress-bar__number h2 span {
   color: #777;
   padding-left: 3px;
   font-size: 24px;
@@ -1432,7 +1438,7 @@ body {
   transition: 0.5s ease;
 }
 
-.container .circularProgressBar__percent svg {
+.container .circular-progress-bar__percent svg {
   position: relative;
   width: 150px;
   height: 150px;
@@ -1440,7 +1446,7 @@ body {
           transform: rotate(-85deg);
 }
 
-.container .circularProgressBar__percent svg circle {
+.container .circular-progress-bar__percent svg circle {
   width: 100%;
   height: 100%;
   fill: none;
@@ -1451,22 +1457,218 @@ body {
           transform: translate(5px, 5px);
 }
 
-.container .circularProgressBar__percent svg circle:nth-child(2) {
+.container .circular-progress-bar__percent svg circle:nth-child(2) {
   stroke-dasharray: 440;
   stroke-dashoffset: 440;
 }
 
-.container .circularProgressBar__card:nth-child(1) svg circle:nth-child(2) {
+.container .circular-progress-bar__card:nth-child(1) svg circle:nth-child(2) {
   stroke-dashoffset: calc(440 - (440 * 80) / 100);
   stroke: #63e2ff;
 }
 
-.container .circularProgressBar__card:nth-child(2) svg circle:nth-child(2) {
+.container .circular-progress-bar__card:nth-child(2) svg circle:nth-child(2) {
   stroke-dashoffset: calc(440 - (440 * 80) / 100);
   stroke: #d9e021;
 }
 
-.container .circularProgressBar__card:nth-child(3) svg circle:nth-child(2) {
+.container .circular-progress-bar__card:nth-child(3) svg circle:nth-child(2) {
   stroke-dashoffset: calc(440 - (440 * 90) / 100);
   stroke: #ed1e79;
+}
+
+/* feedBackForm
+===================*/
+.feed-back-form {
+  background-color: #ffffff;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 50em;
+  padding: 5em 0;
+}
+
+.feed-back-form .feed-back-form__title {
+  text-align: center;
+}
+
+.feed-back-form__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@supports (display: grid) {
+  @media (min-width: 50em) {
+    .feed-back-form__form {
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: 50% 50%;
+          grid-template-columns: 50% 50%;
+      grid-column-gap: 1em;
+          grid-template-areas: "name     email" "message  message" ".        button";
+    }
+    .feed-back-form__form .name {
+      -ms-grid-row: 1;
+      -ms-grid-column: 1;
+      grid-area: name;
+    }
+    .feed-back-form__form .email {
+      -ms-grid-row: 1;
+      -ms-grid-column: 2;
+      grid-area: email;
+    }
+    .feed-back-form__form .message {
+      -ms-grid-row: 2;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 2;
+      grid-area: message;
+    }
+    .feed-back-form__form .message textarea {
+      height: 10em;
+    }
+    .feed-back-form__form .button {
+      -ms-grid-row: 3;
+      -ms-grid-column: 2;
+      grid-area: button;
+    }
+  }
+}
+
+label {
+  display: block;
+  margin-top: 1em;
+  color: #606060;
+}
+
+input,
+textarea {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+  padding: 0.75em;
+  width: 100%;
+  min-width: 15em;
+  background: #fbfbfc;
+  border: 1px solid #e8e9eb;
+  font-size: 1.2rem;
+}
+
+textarea {
+  resize: vertical;
+  outline: none;
+}
+
+.button {
+  display: inline-block;
+  width: auto;
+  min-width: auto;
+  margin-top: 1em;
+  margin-left: auto;
+  background: #03afc2;
+  border: none;
+  padding: 0.5em 1.5em;
+}
+
+/* about
+===================*/
+.about {
+  /* изменить   */
+  background-color: #22252c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about .about__content {
+  padding: 0 auto;
+}
+
+.about .about__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about .about__my-foto {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 50px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  position: relative;
+}
+
+.about .about__border-img {
+  border: 7px solid #e45252;
+  position: relative;
+  width: 386px;
+  height: 387px;
+}
+
+.about .about__block-abs {
+  position: absolute;
+  background-color: #141820;
+  -webkit-box-shadow: 0 0 8px #e45252;
+          box-shadow: 0 0 8px #e45252;
+  top: 40px;
+  left: -40px;
+}
+
+.about img {
+  height: 383px;
+  width: 383px;
+}
+
+.about .about-me_info {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  color: #fff;
+}
+
+.about .about__title {
+  color: #e45252;
+  font-size: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.about .about__text p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 24px;
+  width: 90%;
+  letter-spacing: 0.56px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.about__btn {
+  margin: 30 auto;
 }
