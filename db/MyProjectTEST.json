@@ -1,0 +1,40 @@
+[
+  {
+    "id": 0,
+    "title": "ActiveBox",
+    "description": "Описание",
+    "type": "landingPage",
+    "techStack": ["HTML5", "CSS3", "jQuery", "flexbox"],
+    "code": "",
+    "pages": "https://trouvere.github.io/ActiveBox/"
+  },
+  {
+    "id": 1,
+    "title": "ComplexBusinessClosure",
+    "description": "Описание222222222",
+    "type": "landingPage",
+    "techStack": ["jQuery", "flexbox"],
+    "code": "https://github.com/Trouvere/ComplexBusinessClosure",
+    "pages": "https://trouvere.github.io/ComplexBusinessClosure/"
+  },
+  {
+    "id": 4,
+    "title": "snake",
+    "description": "Описание44444444",
+    "type": "JS",
+    "coverImage": "",
+    "techStack": ["JS"],
+    "code": "https://github.com/Trouvere/snake",
+    "pages": "https://trouvere.github.io/snake/"
+  },
+  {
+    "id": 5,
+    "title": "delivery-food",
+    "description": "Описание555555555555",
+    "type": "JS",
+    "coverImage": "",
+    "techStack": ["JS"],
+    "code": "https://github.com/Trouvere/delivery-food",
+    "pages": "https://trouvere.github.io/delivery-food/"
+  }
+]
