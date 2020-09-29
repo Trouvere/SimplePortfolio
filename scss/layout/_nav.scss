@@ -22,7 +22,7 @@
   color: $primary-color-text;
   // color: red;
 
-  text-decoration: none;
+  // text-decoration: none;
   opacity: 0.75;
 
   transition: opacity 0.1s linear;
@@ -36,4 +36,38 @@
 
 .nav__link:hover {
   opacity: 1;
+}
+
+.nav__link:active {
+  color: $accent-color;
+}
+
+@media (max-width: 991px) {
+  /* Nav */
+  .nav {
+    ul {
+      display: none;
+      width: 100%;
+      flex-direction: column;
+
+      // background-color: #31344e;
+      // text-align: right;
+
+      position: absolute;
+      top: 100px;
+      right: 0;
+    }
+    li {
+      text-align: right;
+      margin-top: 10px;
+    }
+    .nav__link {
+      margin-right: 10px;
+    }
+  }
+  .nav.showNav {
+    ul {
+      display: flex;
+    }
+  }
 }

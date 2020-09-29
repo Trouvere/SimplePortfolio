@@ -19,10 +19,9 @@
   background-image: url("../img/n/laptop (11).jpg");
 
   opacity: 0.8;
-  min-width: 100vh;
+  // min-width: 100vh;
   background-size: cover;
   min-height: 100vh;
-  padding-top: 100px;
 
   z-index: 1;
 
@@ -30,6 +29,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  padding-top: 100px;
+  &.showNav {
+    padding-top: 220px;
+  }
   // linear-gradient(white, gray);
   // background-color: red;
 
@@ -70,7 +74,7 @@
   &__inner {
     position: relative;
     z-index: 2;
-    min-width: 100vh;
+    // min-width: 100vh;
 
     // background-color: rgba($color: white, $alpha: 0.7);
 

@@ -32,26 +32,25 @@
             <li>
               <a class="nav__link" href="#about" data-scroll="#about">about</a>
             </li>
-            <!-- <li>
-              <a class="nav__link" href="#" data-scroll="#resume">resume</a>
-            </li> -->
             <li>
-              <a class="nav__link" href="#skills" data-scroll="#skills">skills</a>
-            </li>
-            <li>
-              <a class="nav__link" href="#works" data-scroll="#works"
-                >works</a
+              <a class="nav__link" href="#skills" data-scroll="#skills"
+                >skills</a
               >
             </li>
             <li>
-              <a class="nav__link" href="#contact" data-scroll="#contact">contact</a>
+              <a class="nav__link" href="#works" data-scroll="#works">works</a>
+            </li>
+            <li>
+              <a class="nav__link" href="#contact" data-scroll="#contact"
+                >contact</a
+              >
             </li>
           </ul>
         </nav>
 
-        <!-- <button class="burger" type="button" id="navToggle">
+        <button class="burger" type="button" id="navToggle">
           <span class="burger__item">Menu</span>
-        </button> -->
+        </button>
       </div>
       <!-- </div> -->
     </header>
@@ -59,8 +58,6 @@
     <!--! Intro -->
     <div class="intro" id="intro">
       <div class="cover"></div>
-      <!-- <div class="container"> -->
-
       <div class="parallax">
         <div class="parallax__layer">
           <div class="intro__inner">
@@ -71,21 +68,10 @@
               <a href="#about" class="btn btn--red"> More About Me </a>
             </div>
 
-            <div class="scroll-down">
+            <a href="#about" class="scroll-down">
               <div class="mouse"></div>
               <p>Scroll Down</p>
-            </div>
-
-            <!-- <div class="scroll-downs">
-              <div class="mousey">
-                <div class="scroller"></div>
-              </div>
-            </div>
-            <div class="intro__scroll">
-              <a href="#about" class="scroll-link smoothscroll">
-                <span>Scroll Down</span>
-              </a>
-            </div> -->
+            </a>
           </div>
         </div>
         <!-- /.paralax__layer -->
@@ -105,9 +91,8 @@
               <div class="about__border-img">
                 <div class="about__block-abs">
                   <img
-                    class="about__img"
+                    class="about__img b-lazy"
                     src="https://sun1.velcom-by-minsk.userapi.com/c831309/v831309545/156327/GEZaKPcD2C4.jpg"
-                    class="b-lazy"
                     alt=""
                   />
                 </div>
@@ -139,12 +124,7 @@
               <!-- /.about__content -->
             </div>
           </div>
-          <!-- /.about__inner -->
 
-          <!-- <a href="" class="about__btn" target="blank"
-            ><i class="fas fa-cloud-upload-alt" aria-hidden="true"></i>Скачать
-            резюме</a
-          > -->
           <div class="center">
             <a href="" class="btn about__btn" target="blank"
               ><i class="fas fa-cloud-upload-alt"></i>Скачать резюме</a
@@ -155,9 +135,9 @@
       <!-- /.container -->
     </section>
     <!--! about -->
-    
+
     <!--! circular-progress-bar -->
-    <div class="skills circular-progress-bar " id="skills">
+    <div class="skills circular-progress-bar" id="skills">
       <div class="container">
         <div class="circular-progress-bar__card">
           <div class="circular-progress-bar__box">
@@ -207,30 +187,36 @@
 
     <!--! Works -->
     <div class="section works__section">
-      <h2 class=" works__title title">Мои работы</h2>
+      <h2 class="works__title title">Мои работы</h2>
       <div class="works__wrap">
         <div class="works__card card">
           <div class="card__front">
             <!-- img/logo/trouvere_logo_wolf_vertical-light.png -->
-            <img src="img/works/ActiveBox.PNG" class="b-lazy" alt="">
+            <img src="img/works/ActiveBox.PNG" class="b-lazy" alt="" />
             <div class="works__wrap_img"></div>
           </div>
           <div class="card__back">
-            <p>Мой первый тренеровочный проект, сайт был сверстан с помощью bootstrap. </p>
-          <div class="techstack">
-            <ul class="techstack__list">
-              <li class="techstack__item">JavaScript</li>
-              <li class="techstack__item">jQuery</li>
-<!-- 								<li class="techstack__item">Symfony</li>
+            <p>
+              Мой первый тренеровочный проект, сайт был сверстан с помощью
+              bootstrap.
+            </p>
+            <div class="techstack">
+              <ul class="techstack__list">
+                <li class="techstack__item">JavaScript</li>
+                <li class="techstack__item">jQuery</li>
+                <!-- 								<li class="techstack__item">Symfony</li>
               <li class="techstack__item">SASS</li>
               <li class="techstack__item">Gulp</li> -->
-            </ul>
-          </div>
-            <a class="work-btn" href="http://movetonjkee.ru/practice3/scr/" target="blank"><i class="fas fa-link" aria-hidden="true"></i></a>
+              </ul>
+            </div>
+            <a
+              class="work-btn"
+              href="http://movetonjkee.ru/practice3/scr/"
+              target="blank"
+              ><i class="fas fa-link" aria-hidden="true"></i
+            ></a>
           </div>
         </div>
-        
-            
       </div>
     </div>
     <!--! Works -->
@@ -238,84 +224,80 @@
     <section class="contact feed-back-form" id="contact">
       <div class="container">
         <div class="feed-back-form__inner">
-        <h1 class="feed-back-form__title">Связаться со мной</h1>
-      <form
-        class="feed-back-form__form"
-        action="https://getform.io/f/e8b76534-64ab-4805-b9a2-389339262d27"
-        method="POST"
-      >
-        <label class="name" class="name"
-          >Name:
-          <input type="text" id="name" name="name" />
-        </label>
+          <h1 class="feed-back-form__title">Связаться со мной</h1>
+          <form
+            class="feed-back-form__form"
+            action="https://getform.io/f/e8b76534-64ab-4805-b9a2-389339262d27"
+            method="POST"
+          >
+            <label class="name"
+              >Name:
+              <input type="text" id="name" name="name" />
+            </label>
 
-        <label class="email" class="email"
-          >Email:
-          <input type="email" id="email" name="email" />
-        </label>
+            <label class="email"
+              >Email:
+              <input type="email" id="email" name="email" />
+            </label>
 
-        <label message="message" class="message"
-          >Message:
-          <textarea type="text id="message"s name="message"></textarea>
-        </label>
+            <label message="message" class="message"
+              >Message:
+              <textarea type="text" id="message" name="message"></textarea>
+            </label>
 
-        <input class="button form-button" type="submit" value="SEND" />
-      </form>
-    </div>
-    </div>
+            <input class="button form-button" type="submit" value="SEND" />
+          </form>
+        </div>
+      </div>
     </section>
     <!--! feed-back-form -->
 
     <footer class="footer">
       <!-- <div class="container"> -->
-        <div class="footer__content ">
-          <div class="footer__inner">
-            <div class="footer__info">
-              <ul class="footer__list">
-                <li>
-                  <a class="footer__phone" href="tel:+375447886785"
-                    >+375 (44)788-67-85</a
-                  >
-                </li>
-                <li>
-                  <a class="footer__mail" href="mailto:trouvere@bk.ru"
-                    >trouvere@bk.ru</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div class="social">
-              <ul class="socialIcons">
-                <li>
-                  <a href="#" class="facebook"
-                    ><i class="fa fa-facebook"></i
-                  ></a>
-                </li>
-                <!-- <li><a href="#" class="envelope"><i class="fa fa-envelope"></i></a></li> -->
-                <!-- <li><a href="#" class="phone"><i class="fa fa-phone"></i></a></li> -->
-                <li>
-                  <a href="#" class="github"><i class="fa fa-github"></i></a>
-                </li>
-                <li>
-                  <a href="#" class="skype"><i class="fa fa-skype"></i></a>
-                </li>
+      <div class="footer__content">
+        <div class="footer__inner">
+          <div class="footer__info">
+            <ul class="footer__list">
+              <li>
+                <a class="footer__phone" href="tel:+375447886785"
+                  >+375 (44)788-67-85</a
+                >
+              </li>
+              <li>
+                <a class="footer__mail" href="mailto:trouvere@bk.ru"
+                  >trouvere@bk.ru</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="social">
+            <ul class="socialIcons">
+              <li>
+                <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+              </li>
+              <!-- <li><a href="#" class="envelope"><i class="fa fa-envelope"></i></a></li> -->
+              <!-- <li><a href="#" class="phone"><i class="fa fa-phone"></i></a></li> -->
+              <li>
+                <a href="#" class="github"><i class="fa fa-github"></i></a>
+              </li>
+              <li>
+                <a href="#" class="skype"><i class="fa fa-skype"></i></a>
+              </li>
 
-                <li>
-                  <a href="#" class="linkedin"
-                    ><i class="fa fa-linkedin"></i
-                  ></a>
-                </li>
-              </ul>
-            </div>
+              <li>
+                <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
+
       <!-- footer__inner -->
       <div class="footer__copy">
         <!-- <div class="container"> -->
-          <div class="copy__text">Мишин Алексей © 2020</div>
+        <div class="copy__text">Мишин Алексей © 2020</div>
         <!-- </div> -->
-      <!-- </div> -->
+      </div>
     </footer>
 
     <script src="js/main.js"></script>

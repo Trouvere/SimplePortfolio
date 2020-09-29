@@ -21,12 +21,16 @@
 }
 
 .feed-back-form {
-  background-color: $white;
-  @include container;
-  padding: 5em 0;
+  background: linear-gradient(45deg, #333333, #5a5454);
+
+  .container {
+    @include container;
+    padding: 5em 0;
+  }
 
   .feed-back-form__title {
     text-align: center;
+    color: $dark-gray;
   }
 }
 

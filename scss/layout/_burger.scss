@@ -1,0 +1,52 @@
+/* Burger */
+.burger {
+  display: none;
+  padding: 9px 10px;
+
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.burger__item {
+  display: block;
+  width: 28px;
+  height: 3px;
+
+  background-color: #fff;
+
+  /* Чтобы не отображать слово Menu */
+  font-size: 0;
+  color: transparent;
+
+  position: relative;
+}
+
+.burger__item:before,
+.burger__item:after {
+  content: "";
+  height: 100%;
+
+  background-color: #fff;
+
+  position: absolute;
+  right: 0;
+  z-index: 1;
+}
+
+.burger__item:before {
+  width: 30px;
+  top: -8px;
+}
+
+.burger__item:after {
+  width: 26px;
+  bottom: -8px;
+}
+
+@media (max-width: 991px) {
+  /* Burger */
+  .burger {
+    display: block;
+  }
+}

@@ -20,7 +20,7 @@ function createTechstackItem(techstackList, techstackItem) {
     <li class="techstack__item">${techstackItem}</li>
       `
   );
-  console.log(techstackList, techstackItem);
+  // console.log(techstackList, techstackItem);
 }
 
 function createCardWorks(work) {
@@ -75,15 +75,23 @@ function createCardWorks(work) {
   if (techStack) {
     techStack.forEach((item) => createTechstackItem(techstackList, item));
   }
-
-  console.log(worksBtnList);
 }
 
 function init() {
+  // Add WORKS
   getData("./db/MyProjectTEST.json").then(function (data) {
-    console.log(data);
     data.forEach(createCardWorks);
   });
 }
 
 init();
+
+/* Nav Toggle */
+const navToggle = document.querySelector("#navToggle");
+const nav = document.querySelector("#nav");
+const intro = document.querySelector("#intro");
+function toggleNav() {
+  nav.classList.toggle("showNav");
+  intro.classList.toggle("showNav");
+}
+navToggle.addEventListener("click", toggleNav);

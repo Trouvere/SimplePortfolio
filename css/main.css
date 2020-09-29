@@ -406,11 +406,18 @@ body {
   text-align: center;
 }
 
+a {
+  text-decoration: none;
+}
+
+/* header
+===================*/
 /* ! header
 ===================*/
 .header {
   width: 100%;
-  height: 50px;
+  height: 100px;
+  position: relative;
   position: absolute;
   top: 0;
   left: 0;
@@ -444,6 +451,8 @@ body {
   padding: 10px;
 }
 
+/* nav
+===================*/
 /* ! nav
 ===================*/
 .nav ul {
@@ -469,7 +478,6 @@ body {
 .nav__link {
   margin-left: 50px;
   color: #ffffff;
-  text-decoration: none;
   opacity: 0.75;
   -webkit-transition: opacity 0.1s linear;
   transition: opacity 0.1s linear;
@@ -485,6 +493,86 @@ body {
 
 .nav__link:hover {
   opacity: 1;
+}
+
+.nav__link:active {
+  color: #03a9f4;
+}
+
+@media (max-width: 991px) {
+  /* Nav */
+  .nav ul {
+    display: none;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    top: 100px;
+    right: 0;
+  }
+  .nav li {
+    text-align: right;
+    margin-top: 10px;
+  }
+  .nav .nav__link {
+    margin-right: 10px;
+  }
+  .nav.showNav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+/* burger
+===================*/
+/* Burger */
+.burger {
+  display: none;
+  padding: 9px 10px;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.burger__item {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: #fff;
+  /* Чтобы не отображать слово Menu */
+  font-size: 0;
+  color: transparent;
+  position: relative;
+}
+
+.burger__item:before,
+.burger__item:after {
+  content: "";
+  height: 100%;
+  background-color: #fff;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+}
+
+.burger__item:before {
+  width: 30px;
+  top: -8px;
+}
+
+.burger__item:after {
+  width: 26px;
+  bottom: -8px;
+}
+
+@media (max-width: 991px) {
+  /* Burger */
+  .burger {
+    display: block;
+  }
 }
 
 /* Intro
@@ -503,10 +591,8 @@ body {
   position: relative;
   background-image: url("../img/n/laptop (11).jpg");
   opacity: 0.8;
-  min-width: 100vh;
   background-size: cover;
   min-height: 100vh;
-  padding-top: 100px;
   z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -517,12 +603,16 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-top: 100px;
+}
+
+.intro.showNav {
+  padding-top: 220px;
 }
 
 .intro__inner {
   position: relative;
   z-index: 2;
-  min-width: 100vh;
   width: 100%;
   margin: 0 auto;
   text-align: center;
