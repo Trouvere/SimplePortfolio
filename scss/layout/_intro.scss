@@ -1,86 +1,23 @@
-.cover {
-  // background: rgba(0, 0, 0, 0.6);
-  background-color: transparentize($black, 0.6);
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 2;
-}
-// .content {
-//   position: relative;
-//   z-index: 2;
-// }
-
 .intro {
-  position: relative;
-
+  // position: relative;
   background-image: url("../img/n/laptop (11).jpg");
-
   opacity: 0.8;
-  // min-width: 100vh;
   background-size: cover;
   min-height: 100vh;
-
-  z-index: 1;
-
+  // z-index: 1;
   // center
   display: flex;
   justify-content: center;
   align-items: center;
-
   padding-top: 100px;
   &.showNav {
     padding-top: 220px;
   }
-  // linear-gradient(white, gray);
-  // background-color: red;
 
-  //css-parallax<
-  // position: relative;
-  // min-height: 100vh;
-  // min-width: 100vh;
-  // overflow: hidden;
-  //css-parallax>
-
-  //css-parallax2>
-  // height: 100%;
-  // overflow: hidden;
-  //css-parallax2
-
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: center;
-  // height: 1750px;
-  // padding-top: 100px;
-  // background-size: cover;
-  //css-parallax<
-  // &:before {
-  //   content: "";
-  //   top: 0;
-  //   right: 0;
-  //   bottom: 0;
-  //   left: 0;
-  //   position: absolute;
-  //   min-height: auto;
-  //   background: $bgColor url("../img/Madeira-bg.jpg") center no-repeat;
-  //   background-size: cover;
-  //   transition: is linear;
-  //   transform: translateZ(-1px) scale(2);
-  //   z-index: -1;
-  // }
-  //css-parallax>
   &__inner {
     position: relative;
-    z-index: 2;
-    // min-width: 100vh;
-
-    // background-color: rgba($color: white, $alpha: 0.7);
-
+    // z-index: 2;
     width: 100%;
-    // max-width: 970px;
-    // padding-top: 100px;
     margin: 0 auto;
     text-align: center;
   }
@@ -89,8 +26,6 @@
     font-family: "Open Sans", sans-serif;
     font-size: 65px;
     line-height: 1.1;
-
-    // color: #00ffff;
     font-weight: 700;
     text-transform: uppercase;
     opacity: 1;
@@ -104,48 +39,3 @@
     font-weight: 400;
   }
 }
-
-// .parallax {
-//   margin: 0;
-//   padding: 0;
-// perspective: 1px;
-// transform-style: preserve-3d;
-//   overflow-y: scroll;
-//   overflow-x: hidden;
-//   font-family: "Amatic SC", cursive;
-//   color: #fff;
-//   &::-webkit-scrollbar {
-//     width: 0;
-//   }
-// }
-// .parallax__layer {
-//   //css-parallax<
-//   box-sizing: border-box;
-//   min-height: 100vh;
-//   text-align: center;
-//   padding-top: 20%;
-//   transform-style: inherit;
-//   width: 100vw;
-//   //css-parallax>
-
-//   //css-parallax<
-//   &:before {
-//     content: "";
-//     display: block;
-//     position: absolute;
-//     left: 0;
-//     right: 0;
-//     bottom: 0;
-//     top: -100;
-//     z-index: -1;
-//     transform-origin: center;
-//     min-height: 100vh;
-//     background-image: url("../img/Madeira-bg.jpg");
-//     background-repeat: no-repeat;
-//     background-size: cover;
-//     transition: 1s;
-//     /* Параллакс */
-//     transform: translateZ(-1px) scale(2);
-//   }
-// }
-// //css-parallax>

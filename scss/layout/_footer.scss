@@ -8,9 +8,12 @@
   display: flex;
 }
 .footer__inner {
+  width: 100%;
   margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  justify-content: center;
 }
 .footer__inner .header__btn {
   float: none;

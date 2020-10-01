@@ -15,22 +15,17 @@ $linkedin: #0e76a8;
 }
 
 .socialIcons {
-  // padding: 0;
-  // margin: 0;
-  // list-style-type: none;
-
-  // display: inline-block;
-  // position: fixed;
-  // top: 0;
-  // bottom: 0;
-  // left: 0;
-  // right: 0;
-  // margin: 0 auto;
-  // height: 70px;
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+
+  /* Расположение строками */
+  /* flex-direction: column; */
+  /* Выравнивание по центру вертикаль */
+  justify-content: center;
   li {
     display: inline-block;
-    margin: auto 10px;
+    // margin: auto 10px;
 
     a {
       text-align: center;
@@ -64,5 +59,17 @@ $linkedin: #0e76a8;
         }
       }
     }
+  }
+}
+
+@media (max-width: 600px) {
+  .socialIcons li {
+    width: 50%;
+  }
+  .social {
+    width: 100%;
+  }
+  .socialIcons {
+    justify-content: space-between;
   }
 }

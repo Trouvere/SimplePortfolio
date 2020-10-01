@@ -258,3 +258,9 @@ $animDuration: 5s;
     color: $colorOutline;
   }
 }
+
+@media (max-width: 420px) {
+  .scroll-down {
+    display: none;
+  }
+}
