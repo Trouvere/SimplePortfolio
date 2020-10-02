@@ -28,3 +28,12 @@ dl,
 dd {
   margin: 0;
 }
+
+a {
+  text-decoration: none;
+}
+
+li {
+  text-decoration: none;
+  list-style-type: none; /* Убираем маркеры */
+}

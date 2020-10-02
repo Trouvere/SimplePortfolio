@@ -2,24 +2,21 @@
   display: inline-block;
   vertical-align: top;
   padding: 14px 40px;
-  /* Скругление */
   border-radius: 4px;
   border: 0;
-  /* задаём вид курсора "руку"*/
   cursor: pointer;
 
-  font-family: "Raleway", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 13px;
-  color: #fff;
+  color: $white;
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
   margin: 20px;
 
-  // transition: background 0.1s linear;
   position: relative;
-  color: white;
+  color: $white;
   font-weight: bold;
   text-decoration: none;
   text-shadow: -1px -1px #000;
@@ -48,16 +45,14 @@
     transition: 0.5s linear;
     background-position: -200% 0, 0 0;
   }
-}
+  &--red {
+    background-color: #e45252;
+    &:hover {
+      background-color: #dd3434;
+    }
+  }
 
-.btn--red {
-  background-color: #e45252;
-}
-
-.btn--red:hover {
-  background-color: #dd3434;
-}
-
-.btn--long {
-  min-width: 280px;
+  &--long {
+    min-width: 280px;
+  }
 }

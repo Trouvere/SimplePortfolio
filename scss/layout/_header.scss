@@ -1,6 +1,3 @@
-/* ! header
-===================*/
-
 .header {
   width: 100%;
   height: 100px;
@@ -11,23 +8,16 @@
   img {
     height: 100%;
   }
-}
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #515369;
+  }
 
-.header.fixed {
-  height: auto;
-  position: fixed;
-  background-color: #31344e;
-}
-
-.header__inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid #515369;
-}
-
-.header__logo {
-  padding: 10px;
+  &__logo {
+    padding: 10px;
+  }
 }
 
 @media (max-width: 420px) {

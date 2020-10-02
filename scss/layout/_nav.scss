@@ -1,6 +1,3 @@
-/* ! nav
-===================*/
-
 .nav {
   ul {
     text-decoration: none;
@@ -9,37 +6,31 @@
     font-weight: 700;
     text-transform: uppercase;
     flex-direction: row;
-    li {
-      text-decoration: none;
-      list-style-type: none; /* Убираем маркеры */
+  }
+  &__link {
+    margin-left: 50px;
+
+    color: $primary-color-text;
+    // color: red;
+
+    // text-decoration: none;
+    opacity: 0.75;
+
+    transition: opacity 0.1s linear;
+    &:first-child {
+      margin-left: 0;
+    }
+    &:last-child {
+      margin-right: 50px;
+    }
+    &:hover {
+      opacity: 1;
+    }
+
+    &:active {
+      color: $accent-color;
     }
   }
-}
-
-.nav__link {
-  margin-left: 50px;
-
-  color: $primary-color-text;
-  // color: red;
-
-  // text-decoration: none;
-  opacity: 0.75;
-
-  transition: opacity 0.1s linear;
-  &:first-child {
-    margin-left: 0;
-  }
-  &:last-child {
-    margin-right: 50px;
-  }
-}
-
-.nav__link:hover {
-  opacity: 1;
-}
-
-.nav__link:active {
-  color: $accent-color;
 }
 
 @media (max-width: 991px) {
@@ -49,10 +40,6 @@
       display: none;
       width: 100%;
       flex-direction: column;
-
-      // background-color: #31344e;
-      // text-align: right;
-
       position: absolute;
       top: 100px;
       right: 0;
@@ -61,13 +48,14 @@
       text-align: right;
       margin-top: 10px;
     }
-    .nav__link {
+    &__link {
       margin-right: 10px;
     }
-  }
-  .nav.showNav {
-    ul {
-      display: flex;
+
+    & .showNav {
+      ul {
+        display: flex;
+      }
     }
   }
 }

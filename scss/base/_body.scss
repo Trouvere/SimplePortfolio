@@ -1,28 +1,9 @@
-html {
-  //css-parallax
-  height: 100%;
-  // overflow: hidden;
-  //css-parallax
-}
 body {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  //css-parallax
-  // padding: 0;
-  // height: 100%;
-  // overflow-x: hidden;
-  // overflow-y: auto;
-  // perspective: 1px;
-  // transform-style: preserve-3d;
-  //css-parallax
-
+  // margin: 0;
+  // display: flex;
+  // flex-direction: column;
   font-family: "Raleway", sans-serif;
   font-size: 14px;
-
-  // background-color: $primary-color;
-
-  // opacity: 0.5;
 
   /* средняя степень сглаживания шрифтов  */
   -webkit-font-smoothing: antialiased;
@@ -30,10 +11,7 @@ body {
   background-color: $dark-blue;
 }
 
+// utils
 .center {
   text-align: center;
-}
-
-a {
-  text-decoration: none;
 }
