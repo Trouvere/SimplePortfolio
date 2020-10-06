@@ -1,0 +1,32 @@
+[
+  {
+    "id": 0,
+    "title": "HTML/HTML5",
+    "percent": "80"
+  },
+  {
+    "id": 1,
+    "title": "CSS/CSS3",
+    "percent": "70"
+  },
+  {
+    "id": 2,
+    "title": "JS/y",
+    "percent": "70"
+  },
+  {
+    "id": 3,
+    "title": "SCSS",
+    "percent": "60"
+  },
+  {
+    "id": 4,
+    "title": "React",
+    "percent": "50"
+  },
+  {
+    "id": 5,
+    "title": "Bootstrap",
+    "percent": "40"
+  }
+]

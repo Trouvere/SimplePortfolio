@@ -1266,22 +1266,30 @@ left: -40px; */
 
 .container .circular-progress-bar__percent svg circle:nth-child(2) {
   stroke-dasharray: 440;
-  stroke-dashoffset: 440;
 }
 
-.container .circular-progress-bar__card:nth-child(1) svg circle:nth-child(2) {
-  stroke-dashoffset: calc(440 - (440 * 80) / 100);
+.container .circular-progress-bar__card:nth-child(4n + 1) svg circle:nth-child(2) {
   stroke: #63e2ff;
 }
 
-.container .circular-progress-bar__card:nth-child(2) svg circle:nth-child(2) {
-  stroke-dashoffset: calc(440 - (440 * 80) / 100);
+.container .circular-progress-bar__card:nth-child(4n + 2) svg circle:nth-child(2) {
   stroke: #d9e021;
 }
 
-.container .circular-progress-bar__card:nth-child(3) svg circle:nth-child(2) {
-  stroke-dashoffset: calc(440 - (440 * 90) / 100);
+.container .circular-progress-bar__card:nth-child(4n + 3) svg circle:nth-child(2) {
   stroke: #ed1e79;
+}
+
+.container .circular-progress-bar__card:nth-child(4n) svg circle:nth-child(2) {
+  stroke: #2ac42a;
+}
+
+.circle10 {
+  stroke-dashoffset: calc(440 - (440 * 10) / 100);
+}
+
+.circle20 {
+  stroke-dashoffset: calc(440 - (440 * 20) / 100);
 }
 
 /* works

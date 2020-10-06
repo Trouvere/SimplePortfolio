@@ -1,6 +1,7 @@
 "use strict";
 
 const worksWrap = document.querySelector(".works__wrap");
+const skills = document.querySelector(".skills");
 
 const getData = async function (url) {
   const responce = await fetch(url);
@@ -21,6 +22,38 @@ function createTechstackItem(techstackList, techstackItem) {
       `
   );
   // console.log(techstackList, techstackItem);
+}
+
+function createSkills(skill) {
+  const { title, percent } = skill;
+
+  // const card = document.createElement("div");
+  const container = skills.querySelector(".container");
+  // card.className = "works__card card";
+  container.insertAdjacentHTML(
+    "beforeend",
+    `    
+
+    <div class="circular-progress-bar__card">
+      <div class="circular-progress-bar__box">
+        <div class="circular-progress-bar__percent">
+          <svg>
+            <circle  cx="70" cy="70" r="70"></circle>
+            <circle class="circle${percent}" cx="70" cy="70" r="70"></circle>
+          </svg>
+          <div class="circular-progress-bar__number">
+            <h2>${percent}<span>%</span></h2>
+          </div>
+          <h3>${title}</h3>
+        </div>
+      </div>
+    </div>         		
+					`
+  );
+
+  // worksWrap.insertAdjacentElement("beforeend", card);
+
+  // const worksBtnList = card.querySelector(".works__btnList");
 }
 
 function createCardWorks(work) {
@@ -81,6 +114,10 @@ function init() {
   // Add WORKS
   getData("./db/MyProjectTEST.json").then(function (data) {
     data.forEach(createCardWorks);
+    // Add skills
+    getData("./db/MySkills.json").then(function (data) {
+      data.forEach(createSkills);
+    });
   });
 }
 
