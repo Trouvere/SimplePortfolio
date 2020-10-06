@@ -3,7 +3,7 @@
 ===================*/
 /* Указываем box sizing */
 @import url("https://fonts.googleapis.com/css?family=Raleway");
-@import url(https://fonts.googleapis.com/css?family=Cabin);
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 *,
 *::before,
 *::after {
@@ -330,7 +330,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-/* icon
+/* icon!
 ===================*/
 .socialIcons {
   text-align: center;
@@ -525,7 +525,6 @@ body {
 
 .scroll-down p {
   margin-top: 50px;
-  font-family: "Cabin", sans-serif;
   letter-spacing: 12px;
   text-indent: 12px;
   color: #ffffff;
