@@ -30,7 +30,7 @@
 
   .feed-back-form__title {
     text-align: center;
-    color: $dark-gray;
+    color: $primary-color-feedBackForm;
   }
 }
 
@@ -65,7 +65,7 @@
         }
       }
 
-      .button {
+      .btn--feed-back-form {
         grid-area: button;
       }
     }
@@ -75,7 +75,7 @@
 label {
   display: block;
   margin-top: 1em;
-  color: $dark-gray;
+  color: $primary-color-feedBackForm;
 }
 
 input,
@@ -93,16 +93,4 @@ textarea {
 textarea {
   resize: vertical;
   outline: none;
-}
-
-.button {
-  display: inline-block;
-  width: auto;
-  min-width: auto;
-  margin-top: 1em;
-  margin-left: auto;
-  background: $accent;
-  border: none;
-  // @include sans-serif($fs: 2.5rem, $color: $white);
-  padding: 0.5em 1.5em;
 }

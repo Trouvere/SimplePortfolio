@@ -52,6 +52,14 @@
     }
   }
 
+  &--feed-back-form {
+    margin-left: auto;
+    background-color: $primary-color-feedBackForm;
+    &:hover {
+      background-color: $accent;
+    }
+  }
+
   &--long {
     min-width: 280px;
   }

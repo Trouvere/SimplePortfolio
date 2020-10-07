@@ -1,28 +1,16 @@
-%center {
+%centerFlex {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-}
 .circular-progress-bar {
-  @extend %center;
+  @extend %centerFlex;
   min-height: 100vh;
   background: linear-gradient(45deg, #333333, #5a5454);
-}
-.container {
-  position: relative;
-  width: 960px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
 
   .circular-progress-bar__card {
-    @extend %center;
+    @extend %centerFlex;
     position: relative;
     width: 250px;
     height: 330px;
@@ -79,7 +67,7 @@
     }
 
     .circular-progress-bar__number {
-      @extend %center;
+      @extend %centerFlex;
       position: absolute;
       top: 0;
       left: 0;

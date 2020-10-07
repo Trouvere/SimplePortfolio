@@ -3,6 +3,7 @@
 ===================*/
 /* Указываем box sizing */
 @import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 *,
 *::before,
@@ -51,7 +52,7 @@ li {
 /* body
 ===================*/
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   /* средняя степень сглаживания шрифтов  */
   -webkit-font-smoothing: antialiased;
@@ -61,6 +62,28 @@ body {
 
 .center {
   text-align: center;
+}
+
+.container {
+  position: relative;
+  width: 960px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.footer, .footer__content, .circular-progress-bar, .circular-progress-bar .circular-progress-bar__card, .circular-progress-bar .circular-progress-bar__percent .circular-progress-bar__number {
+  display: flex1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /* header!
@@ -217,18 +240,16 @@ body {
 /* footer
 ===================*/
 .footer {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-color: #303030;
 }
 
-.footer .container {
-  width: 90%;
-}
-
 .footer__content {
+  width: 100%;
   padding: 20px 0px 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .footer__inner {
@@ -279,6 +300,7 @@ body {
 .footer__info {
   max-width: 360px;
   margin: auto;
+  margin-left: 10px;
 }
 
 .footer__list {
@@ -323,7 +345,7 @@ body {
 
 .footer__copy {
   text-align: center;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 24px;
   padding: 8px 0;
   font-weight: 400;
@@ -451,6 +473,15 @@ body {
 
 .btn--red:hover {
   background-color: #dd3434;
+}
+
+.btn--feed-back-form {
+  margin-left: auto;
+  background-color: #64cff7;
+}
+
+.btn--feed-back-form:hover {
+  background-color: #03afc2;
 }
 
 .btn--long {
@@ -1037,8 +1068,8 @@ body {
   padding: 0 auto;
   margin-top: 50px;
   max-width: 900px;
-  /* width: 70%; */
-  /* flex-basis: 40%; */
+  /* width: 70%; 
+    /* flex-basis: 40%; */
 }
 
 .about .about__my-foto {
@@ -1075,7 +1106,7 @@ left: -40px; */
 }
 
 .about .about__text p {
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 300;
   line-height: 24px;
   letter-spacing: 0.56px;
@@ -1084,10 +1115,10 @@ left: -40px; */
 }
 
 .about__btn {
-  margin: 30 auto;
+  margin: 30px auto;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1300px) {
   .about .about__my-foto {
     width: 50%;
     /* padding: 30px; */
@@ -1106,6 +1137,9 @@ left: -40px; */
     width: 100%;
     padding: 30px;
   }
+  .about .about__text p {
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -1121,7 +1155,7 @@ left: -40px; */
 
 /* _circularProgressBar
 ===================*/
-.circular-progress-bar, .container .circular-progress-bar__card, .container .circular-progress-bar__percent .circular-progress-bar__number {
+.footer, .footer__content, .circular-progress-bar, .circular-progress-bar .circular-progress-bar__card, .circular-progress-bar .circular-progress-bar__percent .circular-progress-bar__number {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1133,30 +1167,12 @@ left: -40px; */
           align-items: center;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-}
-
 .circular-progress-bar {
   min-height: 100vh;
   background: linear-gradient(45deg, #333333, #5a5454);
 }
 
-.container {
-  position: relative;
-  width: 960px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.container .circular-progress-bar__card {
+.circular-progress-bar .circular-progress-bar__card {
   position: relative;
   width: 250px;
   height: 330px;
@@ -1170,27 +1186,27 @@ left: -40px; */
   transition: 0.5s ease;
 }
 
-.container .circular-progress-bar__card:hover {
+.circular-progress-bar .circular-progress-bar__card:hover {
   -webkit-transform: translatey(-15px);
           transform: translatey(-15px);
   -webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
           box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
 }
 
-.container .circular-progress-bar__card:hover .circular-progress-bar__number h2 {
+.circular-progress-bar .circular-progress-bar__card:hover .circular-progress-bar__number h2 {
   color: #fff;
   font-size: 50px;
 }
 
-.container .circular-progress-bar__card:hover .circular-progress-bar__number h2 span {
+.circular-progress-bar .circular-progress-bar__card:hover .circular-progress-bar__number h2 span {
   color: #fff;
 }
 
-.container .circular-progress-bar__card:hover h3 {
+.circular-progress-bar .circular-progress-bar__card:hover h3 {
   color: #fff;
 }
 
-.container .circular-progress-bar__card:before {
+.circular-progress-bar .circular-progress-bar__card:before {
   content: "";
   position: absolute;
   top: 0;
@@ -1201,7 +1217,7 @@ left: -40px; */
   pointer-events: none;
 }
 
-.container .circular-progress-bar__percent {
+.circular-progress-bar .circular-progress-bar__percent {
   position: relative;
   width: 150px;
   height: 150px;
@@ -1212,7 +1228,7 @@ left: -40px; */
   z-index: 1;
 }
 
-.container .circular-progress-bar__percent h3 {
+.circular-progress-bar .circular-progress-bar__percent h3 {
   margin-top: 16px;
   color: #777;
   font-size: 22px;
@@ -1220,7 +1236,7 @@ left: -40px; */
   transition: 0.5s ease;
 }
 
-.container .circular-progress-bar__percent .circular-progress-bar__number {
+.circular-progress-bar .circular-progress-bar__percent .circular-progress-bar__number {
   position: absolute;
   top: 0;
   left: 0;
@@ -1229,14 +1245,14 @@ left: -40px; */
   border-radius: 50%;
 }
 
-.container .circular-progress-bar__percent .circular-progress-bar__number h2 {
+.circular-progress-bar .circular-progress-bar__percent .circular-progress-bar__number h2 {
   color: #777;
   font-size: 44px;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
 }
 
-.container .circular-progress-bar__percent .circular-progress-bar__number h2 span {
+.circular-progress-bar .circular-progress-bar__percent .circular-progress-bar__number h2 span {
   color: #777;
   padding-left: 3px;
   font-size: 24px;
@@ -1244,7 +1260,7 @@ left: -40px; */
   transition: 0.5s ease;
 }
 
-.container .circular-progress-bar__percent svg {
+.circular-progress-bar .circular-progress-bar__percent svg {
   position: relative;
   width: 150px;
   height: 150px;
@@ -1252,7 +1268,7 @@ left: -40px; */
           transform: rotate(-85deg);
 }
 
-.container .circular-progress-bar__percent svg circle {
+.circular-progress-bar .circular-progress-bar__percent svg circle {
   width: 100%;
   height: 100%;
   fill: none;
@@ -1263,23 +1279,23 @@ left: -40px; */
           transform: translate(5px, 5px);
 }
 
-.container .circular-progress-bar__percent svg circle:nth-child(2) {
+.circular-progress-bar .circular-progress-bar__percent svg circle:nth-child(2) {
   stroke-dasharray: 440;
 }
 
-.container .circular-progress-bar__card:nth-child(4n + 1) svg circle:nth-child(2) {
+.circular-progress-bar .circular-progress-bar__card:nth-child(4n + 1) svg circle:nth-child(2) {
   stroke: #63e2ff;
 }
 
-.container .circular-progress-bar__card:nth-child(4n + 2) svg circle:nth-child(2) {
+.circular-progress-bar .circular-progress-bar__card:nth-child(4n + 2) svg circle:nth-child(2) {
   stroke: #d9e021;
 }
 
-.container .circular-progress-bar__card:nth-child(4n + 3) svg circle:nth-child(2) {
+.circular-progress-bar .circular-progress-bar__card:nth-child(4n + 3) svg circle:nth-child(2) {
   stroke: #ed1e79;
 }
 
-.container .circular-progress-bar__card:nth-child(4n) svg circle:nth-child(2) {
+.circular-progress-bar .circular-progress-bar__card:nth-child(4n) svg circle:nth-child(2) {
   stroke: #2ac42a;
 }
 
@@ -1530,7 +1546,7 @@ text-align: left; */
 
 .feed-back-form .feed-back-form__title {
   text-align: center;
-  color: #606060;
+  color: #64cff7;
 }
 
 .feed-back-form__form {
@@ -1572,7 +1588,7 @@ text-align: left; */
     .feed-back-form__form .message textarea {
       height: 10em;
     }
-    .feed-back-form__form .button {
+    .feed-back-form__form .btn--feed-back-form {
       -ms-grid-row: 3;
       -ms-grid-column: 2;
       grid-area: button;
@@ -1583,7 +1599,7 @@ text-align: left; */
 label {
   display: block;
   margin-top: 1em;
-  color: #606060;
+  color: #64cff7;
 }
 
 input,
@@ -1602,15 +1618,4 @@ textarea {
 textarea {
   resize: vertical;
   outline: none;
-}
-
-.button {
-  display: inline-block;
-  width: auto;
-  min-width: auto;
-  margin-top: 1em;
-  margin-left: auto;
-  background: #03afc2;
-  border: none;
-  padding: 0.5em 1.5em;
 }

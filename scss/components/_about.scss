@@ -18,7 +18,7 @@
     padding: 0 auto;
     margin-top: 50px;
     max-width: 900px;
-    /* width: 70%; */
+    /* width: 70%; 
     /* flex-basis: 40%; */
   }
   .about__my-foto {
@@ -62,7 +62,7 @@ left: -40px; */
     text-transform: uppercase;
   }
   .about__text p {
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 300;
     line-height: 24px;
     // width: 90%;
@@ -72,11 +72,11 @@ left: -40px; */
   }
 }
 .about__btn {
-  margin: 30 auto;
+  margin: 30px auto;
   //   background-color: $primary-color;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1300px) {
   .about .about__my-foto {
     width: 50%;
     /* padding: 30px; */
@@ -94,6 +94,11 @@ left: -40px; */
   .about .about__content {
     width: 100%;
     padding: 30px;
+  }
+  .about {
+    .about__text p {
+      font-size: 18px;
+    }
   }
 }
 @media (max-width: 500px) {

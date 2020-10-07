@@ -1,18 +1,14 @@
 .footer {
+  @extend %centerFlex;
+  flex-direction: column;
   background-color: #303030;
-  .container {
-    // изменить потом
-    width: 90%;
-    // margin: 0 auto;
-    // max-width: 60em;
-    // padding: 5em 0;
-  }
 }
 
 .footer__content {
   // background-color: #595959;
+  width: 100%;
   padding: 20px 0px 30px;
-  display: flex;
+  @extend %centerFlex;
 }
 .footer__inner {
   width: 100%;
@@ -49,6 +45,7 @@
 .footer__info {
   max-width: 360px;
   margin: auto;
+  margin-left: 10px;
 }
 .footer__list {
   // text-decoration: none;
@@ -93,7 +90,7 @@
   // background-color: #303030;
   // margin: 0 auto;
   text-align: center;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 24px;
   padding: 8px 0;
   font-weight: 400;
